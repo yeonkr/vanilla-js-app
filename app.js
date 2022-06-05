@@ -39,3 +39,14 @@ if(isNaN(age) || age < 0) {
 // true && false === false
 // false && false === false
 
+//--------------------------------------------//
+// #3 AVASCRIPT ON THE BROWSER
+
+const title = document.getElementById("title");
+
+title.innerText = "Got you"
+
+console.log(title.id);
+console.log(title.className);
+
+
