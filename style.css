@@ -1,4 +1,4 @@
-.hidden {
+/* /* .hidden {
     display: none;
 }
 
@@ -16,6 +16,5 @@ img {
 
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
-    }
-    
-
+    margin: 0 auto;    
+}

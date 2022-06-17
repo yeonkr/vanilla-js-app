@@ -8,13 +8,14 @@ let toDos = []; // toDo에 들어오는 텍스트를 배열로 묶어 보관하�
 
 
 function saveToDos() {
-    localStorage.setItem("todos", JSON.stringify(toDos)) // toDos array를 localSotrage에 집어넣고 대입한 값을 알아서 string의 형태로 저장한다. ["a","b","c"]
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos)) // toDos array를 localSotrage에 집어넣고 대입한 값을 알아서 string의 형태로 저장한다. ["a","b","c"]
 }
 
 function deleteToDo(event) {
     const li = event.target.parentElement // 버튼의 부모에 접근
-    console.log(li.id)
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id)); 
+    saveToDos();
 }
 
 function paintToDo(newTodo) { // handleToDoSubmit 함수가 이 paintToDo를 사용할 것.
@@ -52,8 +53,6 @@ if(savedToDos !== null) {
     toDos = parsedToDos
     parsedToDos.forEach(paintToDo); // forEach함수는 paintToDo를 parsedToDos 배열의 요소마다 실행함. 
 }
-
-
 
 
 /* 정리 
