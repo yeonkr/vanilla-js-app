@@ -1,5 +1,15 @@
-/* /* .hidden {
-    display: none;
+.hidden {
+    display:none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 300px;
+    font-family: 'Noto Serif KR', serif;
+    margin: 0 auto; 
 }
 
 img {
@@ -12,9 +22,151 @@ img {
     bottom:0px;
     z-index: -1;
     opacity:80%;
+}
+
+#login-form{
+    text-align: center;
+    font-size: 10px;
+    color: whitesmoke;
+    opacity: 80%;
+}
+    #login-form input:first-child{
+        border:none;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.102);
+        color:white;
+        font-size:18px;
+        padding: 15px;
+        margin-bottom: 20px;
+        width: 540px;
+        height:40px;
+        transition: all, 1s;
+    }
+    #login-form input:first-child:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(20, 20, 20);
+    }   
+
+    #login-form input:first-child:focus{
+        outline:none;
+        background-color:rgba(125, 120, 120, 0.479);
+    }
+    #login-form input:nth-child(2){
+        margin-left:10px;
+        border:none;
+        border-radius: 20px;
+        color: rgba(80, 80, 80, 0.869);
+        background-color:rgba(255, 255, 255, 0.777);
+        font-size:15px;
+        width:90px;
+        height:45px;
+        box-shadow: 9px 4px 7px rgba(0, 0, 0, 0.51);
+        cursor: pointer;
+        transition: all, 0.3s;
+    }
+    #login-form input:nth-child(2):active{
+        outline: none;
+        background-color:darkgray;
+        color:white;
     }
 
-body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
-    margin: 0 auto;    
+#clock{
+    margin:10px;
+    text-align: center;
+    height:300px;
+    font-size:10rem;
+    color: whitesmoke;
+    opacity: 90%;
 }
+
+#greeting{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+    color: whitesmoke;
+    opacity: 70%;
+}
+
+#todo-form{
+    text-align: center;
+    font-size: 15px;
+    color: whitesmoke;
+    opacity: 70%;
+}
+
+#todo-form input{
+    border:none;
+    text-align: center;
+    width: 640px;
+    height:40px;
+    font-size:18px;
+    background-color: rgba(255,255,255,0.1);
+    color:white;
+    transition: all, 1s;
+    margin-bottom:30px;
+}
+    #todo-form input:hover{
+        background-color: #ffffff;
+    }
+
+    #todo-form input:focus{
+        outline:none;
+        background-color:rgba(122, 120, 120, 0.479);
+    }
+
+#todo-list{
+    text-align: left;
+    color: whitesmoke;
+    opacity: 88%;
+}
+    #todo-list li{
+        list-style: none;
+        margin-top:40px;
+        margin-bottom:50px;
+        margin: 0 auto;
+        width:683px;
+        color:rgba(83, 80, 80, 0.79);
+        font-size:18px;
+    }
+
+    #todo-list li:hover{
+        color:rgb(0, 183, 255);
+    }
+    
+    #todo-list button{
+        border:none;
+        font-size:14px;
+        margin-left:10px;
+        background-color:rgba(255,255,255,0);
+        width:80px;
+        height:33px;
+    }
+
+    #todo-list button:hover{
+        cursor: pointer;
+    }
+
+#quote{
+    font-size: 24px;
+    text-align: center;
+    padding-left: 40px;
+    position:fixed;
+    bottom:9%;
+    color: whitesmoke;
+    opacity: 90%;
+}
+
+#weather{
+    position: fixed;
+    top: 8%;
+    left: 90%;
+    font-size: 20px;
+    color: whitesmoke;
+    opacity: 80%;
+}
+    #weather:hover{
+        color:rgba(138, 183, 253, 0.722);
+        cursor: pointer;
+    }  

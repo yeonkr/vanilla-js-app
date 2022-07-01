@@ -1,5 +1,5 @@
 
-const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
+const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
 
 // 이미지 랜덤으로 가져옴
 const chosenImage = images[Math.floor(Math.random() * images.length)];
